@@ -3,14 +3,64 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change the href to link to your favicon -->
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Change the title to reflect your site's name -->
+    <title>Your Site Title</title>
+  </head>
+  <body>
+    <div class="h-screen flex items-center justify-center text-lg">
+      <div class="flex flex-row gap-6 m-6">
+        <div
+          class="bg-white h-fit shadow-2xl relative rounded-xl border border-gray-400"
+        >
+          <!-- Change the src to your profile picture and add a descriptive alt text -->
+          <img
+            class="w-64 rounded-xl h-64"
+            src="src/assets/example_picture.png"
+            alt="image of site owner"
+          />
+        </div>
+        <div class="flex flex-col">
+          <!-- Replace with your name -->
+          <span class="text-8xl font-semibold">Your <br /> Name</span>
+          <!-- Update classification, position, university, or company -->
+          <span class="text-md font-semibold text-gray-600 italic">
+            Classification or Position, <br />
+             University or Company
+          </span>
+          <div class="flex flex-row mt-4 gap-6">
+            <!-- Change href to your LinkedIn profile URL -->
+            <a href="https://linkedin.com/in/yourname">
+              <img
+                class="w-14 h-14"
+                src="src/assets/linkedin.svg"
+                alt="linkedin logo"
+              />
+            </a>
+            <!-- Change href to your GitHub profile URL -->
+            <a href="https://www.github.com/">
+              <img
+                class="w-14 h-14"
+                src="src/assets/github.svg"
+                alt="github logo"
+              />
+            </a>
+            <!-- Change href to link to your resume file -->
+            <a
+              href="src/assets/example_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-lg font-semibold underline bg-black text-white rounded-md p-3 hover:bg-black/70 transition duration-200"
+            >
+              My Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
